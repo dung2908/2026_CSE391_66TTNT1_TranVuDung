@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Information Form</title>
+    <style>
+        body { font-family: sans-serif; font-size: 14px; color: #333; }
+
+        .form-container { width: 700px; margin: 20px auto; border: 1px solid #ddd; padding: 20px; }
+
+        h3 { border-bottom: 2px solid #333; padding-bottom: 5px; margin-top: 20px; }
+
+        table { width: 100%; border-collapse: collapse; }
+
+        td { padding: 5px; vertical-align: top; }
+
+        .label-cell { width: 150px; font-weight: bold; }
+
+        input[type="text"], select, textarea { width: 100%; padding: 4px; border: 1px solid #ccc; border-radius: 3px; }
+
+        .editor-toolbar { background: #f0f0f0; border: 1px solid #ccc; border-bottom: none; padding: 5px; }
+
+        .editor-content { border: 1px solid #ccc; height: 100px; padding: 10px; background: white; }
+
+        .btn-submit { background: #444; color: white; padding: 8px 20px; border: none; cursor: pointer; }
+
+        .btn-cancel { background: #eee; border: 1px solid #ccc; padding: 8px 20px; cursor: pointer; }
+
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <form>
+        <h3>Basic Info</h3>
+        <table>
+            <tr>
+                <td class="label-cell">Employee ID</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td class="label-cell">Last Name</td>
+                <td>Dodsworth</td>
+            </tr>
+            <tr>
+                <td class="label-cell">First Name</td>
+                <td><input type="text" value="Anne"></td>
+            </tr>
+            <tr>
+                <td class="label-cell">Gender</td>
+                <td>
+                    <input type="radio" name="gender"> Male <br>
+                    <input type="radio" name="gender"> Female <br>
+                    <input type="radio" name="gender"> XXX <br>
+                    <input type="radio" name="gender" checked> ZZZ
+                </td>
+            </tr>
+            <tr>
+                <td class="label-cell">Title</td>
+                <td><input type="text" value="Sales Representative"></td>
+            </tr>
+            <tr>
+                <td class="label-cell">BirthDate</td>
+                <td><input type="text" value="1969-07-02 00:00:00"> (?)</td>
+            </tr>
+            <tr>
+                <td class="label-cell">Reports To</td>
+                <td>
+                    <select>
+                        <option>Buchanan</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <h3>Contact Info</h3>
+        <table>
+            <tr>
+                <td class="label-cell">Email</td>
+                <td><input type="text" placeholder="name@example.com"></td>
+            </tr>
+            <tr>
+                <td class="label-cell">Country</td>
+                <td>
+                    <select>
+                        <option>Russian Federation</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-cell">Photo</td>
+                <td><input type="text" value="EmpID9.bmp"></td>
+            </tr>
+        </table>
+
+        <h3>Notes & Validation</h3>
+        <table>
+            <tr>
+                <td class="label-cell">Notes</td>
+                <td>
+                    <div class="editor-toolbar"><b>B</b> <i>I</i> <u>S</u> | ≡ ≡ ≡</div>
+                    <div class="editor-content">
+                        Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.ZZZ
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-cell">Preferred Shift</td>
+                <td>
+                    <input type="checkbox"> Regular <br>
+                    <input type="checkbox" checked> Gravy Yard
+                </td>
+            </tr>
+            <tr>
+                <td class="label-cell">Active?</td>
+                <td><input type="checkbox" checked></td>
+            </tr>
+            <tr>
+                <td class="label-cell">Are you human?</td>
+                <td>
+                    <div style="font-size: 20px; letter-spacing: 5px; margin-bottom: 5px;">T I D A W O</div>
+                    <small>Click to change</small>
+                    <input type="text">
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+        <div style="text-align: right; padding: 10px;">
+            <button type="submit" class="btn-submit">Submit</button>
+            <button type="button" class="btn-cancel">Cancel</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
