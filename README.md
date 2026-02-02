@@ -2,7 +2,6 @@
 👋 Giới thiệu bản thân
 📌 Thông tin sinh viên
 - Họ và tên: Trần Vũ Dũng
-- Lớp: 66TTNT1
 - Trường: Đại học Thủy Lợi
 - Môn học: Nền tảng Lập trình Web (CSE391)
 📚 Giới thiệu môn học
