@@ -13,16 +13,19 @@ Trong môn học này, em đã được học và thực hành các nội dung c
 - Cấu trúc cơ bản của một trang web
 - Các thẻ HTML phổ biến
 - Tạo bố cục và nội dung cho website
+
 🔹 CSS
 - Trang trí giao diện website
 - Box Model
 - Flexbox / Grid cơ bản
 - Responsive Web Design
+
 🔹 JavaScript
 - Cú pháp JavaScript cơ bản
 - Biến, hàm, điều kiện, vòng lặp
 - Thao tác DOM
 - Xử lý sự kiện (event)
+
 🔹 JavaScript Framework (cơ bản)
 - Làm quen với framework JavaScript
 - Hiểu khái niệm component
