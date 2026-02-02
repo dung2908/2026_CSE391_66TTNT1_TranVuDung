@@ -3,7 +3,6 @@
 📌 Thông tin sinh viên
 - Họ và tên: Trần Vũ Dũng
 - Trường: Đại học Thủy Lợi
-- Lớp: 66TTNT1
 - Môn học: Nền tảng Lập trình Web (CSE391)
 📚 Giới thiệu môn học
 - Môn Nền tảng Lập trình Web (CSE391) cung cấp các kiến thức cơ bản và quan trọng để xây dựng một website hoàn chỉnh, từ giao diện đến xử lý logic phía client.
