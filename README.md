@@ -33,15 +33,19 @@ Trong môn học này, em đã được học và thực hành các nội dung c
 - Hiểu khái niệm component
 - Tách giao diện và logic
 - Áp dụng vào xây dựng website đơn giản
+
 🎯 Mục tiêu
 - Nắm vững kiến thức nền tảng về lập trình web
 - Có khả năng tự xây dựng website đơn giản
 - Là tiền đề để học các framework nâng cao hơn trong tương lai
+
 ✨ Ghi chú
 - Repository này được sử dụng để lưu trữ:
 
 Bài tập thực hành
+
 Ví dụ minh họa
+
 Dự án nhỏ trong quá trình học môn CSE391
 
 
