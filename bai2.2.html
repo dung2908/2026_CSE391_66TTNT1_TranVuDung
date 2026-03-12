@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2.2 - Form Đặt Hàng Nâng Cao</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
+        .error-msg { color: red; font-size: 0.9em; display: none; }
+        .invalid { border: 2px solid red; }
+        #char-count { font-size: 0.85em; }
+        .over-limit { color: red; font-weight: bold; }
+        #summary-box { 
+            display: none; border: 2px solid #28a745; padding: 15px; 
+            margin-top: 20px; background: #f4fff4; border-radius: 8px; 
+        }
+        .btn-group { margin-top: 10px; }
+        button { padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>Đơn Đặt Hàng</h2>
+    <form id="orderForm">
+        <div class="form-group">
+            <label>Tên sản phẩm</label>
+            <select id="product">
+                <option value="">-- Chọn sản phẩm --</option>
+                <option value="Áo">Áo - 150,000đ</option>
+                <option value="Quần">Quần - 200,000đ</option>
+                <option value="Giày">Giày - 500,000đ</option>
+            </select>
+            <span class="error-msg">Vui lòng chọn sản phẩm.</span>
+        </div>
+
+        <div class="form-group">
+            <label>Số lượng (1-99)</label>
+            <input type="number" id="quantity" min="1" max="99">
+            <span class="error-msg">Số lượng phải từ 1 đến 99.</span>
+        </div>
+
+        <div class="form-group">
+            <label>Ngày giao hàng</label>
+            <input type="date" id="deliveryDate">
+            <span class="error-msg">Ngày giao không hợp lệ (phải từ hôm nay đến 30 ngày tới).</span>
+        </div>
+
+        <div class="form-group">
+            <label>Địa chỉ giao hàng (ít nhất 10 ký tự)</label>
+            <input type="text" id="address">
+            <span class="error-msg">Địa chỉ phải ít nhất 10 ký tự.</span>
+        </div>
+
+        <div class="form-group">
+            <label>Ghi chú (tối đa 200 ký tự)</label>
+            <textarea id="note" rows="3"></textarea>
+            <div id="char-count">0/200</div>
+            <span class="error-msg">Ghi chú không được vượt quá 200 ký tự.</span>
+        </div>
+
+        <div class="form-group">
+            <label>Phương thức thanh toán</label>
+            <input type="radio" name="payment" value="COD" style="width: auto;"> COD
+            <input type="radio" name="payment" value="Chuyển khoản" style="width: auto;"> Chuyển khoản
+            <input type="radio" name="payment" value="Ví điện tử" style="width: auto;"> Ví điện tử
+            <span class="error-msg" id="pay-error">Vui lòng chọn phương thức thanh toán.</span>
+        </div>
+
+        <h3>Tổng tiền: <span id="total-price">0đ</span></h3>
+        
+        <button type="submit">Đặt hàng ngay</button>
+    </form>
+
+    <div id="summary-box">
+        <h3>Xác nhận đơn hàng?</h3>
+        <div id="summary-content"></div>
+        <div class="btn-group">
+            <button id="confirmBtn" style="background: #28a745; color: white;">Xác nhận</button>
+            <button id="cancelBtn" style="background: #dc3545; color: white;">Hủy</button>
+        </div>
+    </div>
+
+    <script src="bai2.2.js"></script>
+</body>
+</html>
